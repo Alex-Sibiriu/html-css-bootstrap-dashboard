@@ -1,6 +1,8 @@
 :root {
   --h-header: 70px;
   --w-aside: 70px;
+
+  --clr-light-gray: #E5E5E5;
 }
 
 /***********
@@ -8,10 +10,13 @@
 ***********/
 .debug {
   border: 1px solid black;
-  background-color: rgba(0, 128, 0, 0.2)yellow;
+  min-height: 50px;
+  background: rgba(0, 128, 0, 0.2);
 }
 
-
+.as_w-40 {
+  width: 40%;
+}
 
 /***********
   GENERAL
@@ -21,23 +26,43 @@ body {
   height: 100vh;
 }
 
+/***********
+  HEADER
+***********/
 header {
   height: var(--h-header);
-  background-color: blueviolet;     /*DEBUG*/
 }
 
+header img {
+  width: 50px;
+}
+
+header .as_glass-icon,
+input {
+  background-color: var(--clr-light-gray);
+}
+
+/***********
+  MAIN
+***********/
 main {
   height: calc(100% - var(--h-header));
 }
 
 .as_main-contents {
   width: calc(100% - var(--w-aside));
-  background-color: green;        /*DEBUG*/
+  overflow: auto;
 }
 
 aside {
   width: var(--w-aside);
-  background-color: red;          /*DEBUG*/
+  background-color: #051E34;
+  background-image: url('../img/sidebar-bg.png');
+}
+
+aside .as_aside-icons:hover {
+  background-color: rgba(255, 255, 255, 0.367);
+  cursor: pointer;
 }
 
 
