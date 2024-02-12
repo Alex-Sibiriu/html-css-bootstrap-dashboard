@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
   <title>Bootstrap Dashboard</title>
 
   <!-- LINK BOOTSTRAP -->
@@ -73,8 +73,8 @@
           
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Anotder action</a></li>
+              <li><a class="dropdown-item" href="#">Sometding else here</a></li>
             </ul>
           </div>
         </div>
@@ -130,17 +130,26 @@
     <div class="as_main-contents">
 
       <!-- INFO BAR -->
-      <div class="as_students-infos container-fluid text-bg-primary">
+      <div class="as_students-infos py-4 container-fluid text-bg-primary mb-5">
         <div class="row row-cols-1 row-cols-md-3 align-items-center">
           <div class="col order-md-1 col-xl-2">
-            <p>Nuovo Studente +</p>
+            <p class="fw-bold">Nuovo Studente +</p>
           </div>
           <div class="col col-xl-6">
-            <h1>Boolean</h1>
+            <h1 class="d-inline-block me-2">Boolean</h1>
+            <span class="badge rounded-pill">Piano blaze</span>
+            <div>
+              <span class="badge rounded-pill">3 app</span>
+              <i class="fa-solid fa-angles-right"></i>
+              <span class="badge rounded-pill d-xl-none">+</span>
+              <span class="badge rounded-pill d-none d-xl-inline-block">Boolean mobile app</span>
+              <span class="badge rounded-pill d-none d-xl-inline-block">Boolean web app</span>
+              <span class="badge rounded-pill d-none d-xl-inline-block">Boolean blog app</span>
+            </div>
           </div>
-          <div class="col col-xl-4">
-            <p>Studenti online negli ultimi 30 minuti</p>
-            <p>125</p>
+          <div class="col col-xl-4 mt-4 mt-md-0">
+            <p class="fw-bold">Studenti online negli ultimi 30 minuti</p>
+            <p class="fs-1 fw-bold">125</p>
           </div>
         </div>
       </div>
@@ -151,16 +160,167 @@
         <div class="row row-cols-1 row-cols-xl-2 ">
 
           <!-- FIRST COL -->
-          <div class="col">
+          <div class="col col-xl-8">
             <div class="row row-cols-1 ">
-              <div class="col debug"></div>
+              <div class="col">
+
+                <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0">
+                  <h2 class="as_bg-gray m-0 p-2 border-bottom border-secondary">Prossime Classi</h2>
+
+                  <div class="container-fluid bg-white px-3 pb-4">
+                    <table class="table m-0">             
+                        <thead>
+                          <tr>
+                            <th class="fw-normal" scope="col">Nome</th>
+                            <th class="fw-normal as_th-start-date" scope="col">Data inizio</th>
+                            <th class="fw-normal as_th-status" scope="col">ROI</th>
+                            <th class="fw-normal as_th-status" scope="col">Stato</th>
+                            <th class="fw-normal as_th-actions" scope="col">Azioni</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 75</span>
+                          </td>
+                          <td>15 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 76</span>
+                          </td>
+                          <td>16 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 77</span>
+                          </td>
+                          <td>17 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge bg-warning">Process</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 78</span>
+                          </td>
+                          <td>18 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 79</span>
+                          </td>
+                          <td>19 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge text-bg-danger">Failed</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 80</span>
+                          </td>
+                          <td>20 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 81</span>
+                          </td>
+                          <td>21 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge text-bg-danger">Failed</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td scope="row">
+                            <img class="me-2" src="assets/img/class-avatar.jpg" alt="avatar">
+                            <span>Classe 82</span>
+                          </td>
+                          <td>22 febbraio 2012</td>
+                          <td>20%</td>
+                          <td>
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td>
+                            <i class="action fa-solid fa-pencil"></i>
+                            <i class="action fa-solid fa-trash-can"></i>
+                          </td>
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
               <div class="col debug"></div>
             </div>
           </div>
           <!-- /FIRST COL -->
 
           <!-- SECOND COL -->
-          <div class="col">
+          <div class="col col-xl-4">
             <div class="row row-cols-1 ">
               <div class="col debug"></div>
               <div class="col debug"></div>

@@ -18,6 +18,12 @@
   width: 40%;
 }
 
+.as_bg-gray {
+  background-color: #F7F7F7;
+}
+
+
+
 /***********
   GENERAL
 ***********/
@@ -52,8 +58,10 @@ main {
 .as_main-contents {
   width: calc(100% - var(--w-aside));
   overflow: auto;
+  background-color: #F8F9FA;
 }
 
+/* ASIDE */
 aside {
   width: var(--w-aside);
   background-color: #051E34;
@@ -66,6 +74,48 @@ aside .as_aside-icons:hover {
 }
 
 
+/* INFO BAR */
+.as_students-infos .badge {
+  background-color: #165BBA;
+  font-size: 1rem;
+}
+
+/* TABLE */
+table img {
+  width: 30px;
+}
+
+table th:not(:first-child),
+table td:not(:first-child) {
+  text-align: center;
+}
+
+table th:nth-child(2),
+table td:nth-child(2), 
+table th:nth-child(3),
+table td:nth-child(3) {
+  display: none;
+}
+
+.as_th-start-date {
+  width: 160px;
+}
+
+.as_th-status {
+  width: 120px;
+}
+
+.as_th-actions {
+  width: 120px;
+}
+
+.action{
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 10%;
+  padding: 5px;
+}
+
 /***************
   MEDIA QUERY
 ***************/
@@ -73,10 +123,20 @@ aside .as_aside-icons:hover {
   body {
     --w-aside: 75px;
   }
+
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    display: table-cell;
+  }
 }
 
 @media (min-width: 1200px) {
   body {
     --w-aside: 150px;
+  }
+
+  table th:nth-child(2),
+  table td:nth-child(2) {
+    display: table-cell;
   }
 }
