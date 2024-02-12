@@ -86,6 +86,7 @@
 
   <main class="d-flex">
 
+    <!-- SIDEBAR -->
     <aside class="d-flex flex-column justify-content-between text-white fs-5 px-2">
       <div class="pt-5">
         <div class="as_aside-icons d-flex py-1 mb-2">
@@ -124,13 +125,13 @@
           <p class="m-0">Admin</p>
         </div>
       </div>
-      
     </aside>
+    <!-- SIDEBAR -->
 
     <div class="as_main-contents">
 
       <!-- INFO BAR -->
-      <div class="as_students-infos py-4 container-fluid text-bg-primary mb-5">
+      <div class="as_students-infos py-4 container-fluid text-bg-primary mb-3">
         <div class="row row-cols-1 row-cols-md-3 align-items-center">
           <div class="col order-md-1 col-xl-2">
             <p class="fw-bold">Nuovo Studente +</p>
@@ -156,7 +157,7 @@
       <!-- /INFO BAR -->
 
 
-      <div class="as_main-data container-fluid">
+      <div class="as_main-data container-fluid pb-4">
         <div class="row row-cols-1 row-cols-xl-2 ">
 
           <!-- FIRST COL -->
@@ -164,19 +165,19 @@
             <div class="row row-cols-1 ">
               <div class="col">
 
-                <!-- NEXT CLASS -->
+                <!-- NEXT CLASS TABLE-->
                 <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0 mb-4">
                   <h2 class="as_bg-gray m-0 p-2 border-bottom border-secondary">Prossime Classi</h2>
 
-                  <div class="container-fluid bg-white px-3 pb-4">
+                  <div class="container-fluid bg-white px-3 pt-4 pb-5">
                     <table class="table m-0">             
                         <thead>
                           <tr>
-                            <th class="fw-normal" scope="col">Nome</th>
-                            <th class="fw-normal as_th-start-date" scope="col">Data inizio</th>
-                            <th class="fw-normal as_th-status" scope="col">ROI</th>
-                            <th class="fw-normal as_th-status" scope="col">Stato</th>
-                            <th class="fw-normal as_th-actions" scope="col">Azioni</th>
+                            <th scope="col">Nome</th>
+                            <th class="as_th-start-date" scope="col">Data inizio</th>
+                            <th class="as_th-status" scope="col">ROI</th>
+                            <th class="as_th-status" scope="col">Stato</th>
+                            <th class="as_th-actions" scope="col">Azioni</th>
                           </tr>
                         </thead>
 
@@ -313,11 +314,12 @@
                     </table>
                   </div>
                 </div>
-                <!-- /NEXT CLASS -->
+                <!-- /NEXT CLASS TABLE-->
 
               </div>
               <div class="col">
 
+                <!-- FAQ -->
                 <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0 mb-4">
                   <h2 class="p-2 as_bg-gray m-0">F.A.Q.</h2>
 
@@ -360,6 +362,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- /FAQ -->
 
               </div>
             </div>
@@ -369,7 +372,10 @@
           <!-- SECOND COL -->
           <div class="col col-xl-4">
             <div class="row row-cols-1 ">
+
               <div class="col">
+
+                <!-- TO DO -->
                 <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0 mb-4">
                   <h2 class="p-2 as_bg-gray m-0">To Do</h2>
 
@@ -392,8 +398,27 @@
 
                   </div>
                 </div>
+                <!-- /TO DO -->
+
               </div>
-              <div class="col debug"></div>
+              <div class="col">
+                <!-- STATS-->
+                <div class="container-fluid overflow-hidden rounded-3 border border-secondary bg-white p-3">
+                  <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0">
+                    <img class="img-fluid" src="assets/img/stats.jpeg" alt="stats">
+                    <h6 class="fs-2 fw-normal px-3">Utenti attivi</h6>
+                    <p class="border-bottom border-secondary pb-3 px-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                    <p class="border-bottom border-secondary pb-3 px-3">Gennaio: 1200</p>
+                    <p class="border-bottom border-secondary pb-3 px-3">Febbraio: 800</p>
+                    <p class="border-bottom border-secondary pb-3 px-3">Marzo: 1500</p>
+                    <p class="px-3">
+                      <a href="#">Visualizza report approfondito</a>
+                    </p>
+                  </div>
+                </div>
+                <!-- /STATS-->
+
+              </div>
             </div>
           </div>
           <!-- /SECOND COL -->

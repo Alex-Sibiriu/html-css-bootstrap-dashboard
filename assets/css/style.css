@@ -83,8 +83,8 @@ table img {
   width: 30px;
 }
 
-table td:hover, 
-table td:hover ~ td {
+
+table tr:hover td {
   background-color: #F7F7F7;
 }
 
