@@ -22,8 +22,6 @@
   background-color: #F7F7F7;
 }
 
-
-
 /***********
   GENERAL
 ***********/
@@ -83,6 +81,11 @@ aside .as_aside-icons:hover {
 /* TABLE */
 table img {
   width: 30px;
+}
+
+table td:hover, 
+table td:hover ~ td {
+  background-color: #F7F7F7;
 }
 
 table th:not(:first-child),
