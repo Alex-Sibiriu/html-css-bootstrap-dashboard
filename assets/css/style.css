@@ -1,0 +1,33 @@
+:root {
+  --h-header: 105px;
+  --w-aside: 105px;
+}
+
+
+
+/***********
+  GENERAL
+***********/
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+header {
+  height: var(--h-header);
+  background-color: blueviolet;     /*DEBUG*/
+}
+
+main {
+  height: calc(100% - var(--h-header));
+}
+
+.as_main-contents {
+  width: calc(100% - var(--w-aside));
+  background-color: green;        /*DEBUG*/
+}
+
+aside {
+  width: var(--w-aside);
+  background-color: red;          /*DEBUG*/
+}
