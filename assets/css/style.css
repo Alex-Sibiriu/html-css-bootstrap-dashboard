@@ -1,6 +1,14 @@
 :root {
-  --h-header: 105px;
-  --w-aside: 105px;
+  --h-header: 70px;
+  --w-aside: 70px;
+}
+
+/***********
+  UTILITY
+***********/
+.debug {
+  border: 1px solid black;
+  background-color: rgba(0, 128, 0, 0.2)yellow;
 }
 
 
@@ -30,4 +38,20 @@ main {
 aside {
   width: var(--w-aside);
   background-color: red;          /*DEBUG*/
+}
+
+
+/***************
+  MEDIA QUERY
+***************/
+@media (min-width: 768px) {
+  body {
+    --w-aside: 75px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    --w-aside: 150px;
+  }
 }
