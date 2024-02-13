@@ -8,12 +8,6 @@
 /***********
   UTILITY
 ***********/
-.debug {
-  border: 1px solid black;
-  min-height: 50px;
-  background: rgba(0, 128, 0, 0.2);
-}
-
 .as_w-40 {
   width: 40%;
 }
@@ -28,6 +22,10 @@
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
+}
+
+i {
+  cursor: pointer;
 }
 
 /***********
@@ -83,11 +81,6 @@ table img {
   width: 30px;
 }
 
-
-table tr:hover td {
-  background-color: #F7F7F7;
-}
-
 table th:not(:first-child),
 table td:not(:first-child) {
   text-align: center;
@@ -112,34 +105,38 @@ table td:nth-child(3) {
   width: 120px;
 }
 
-.action{
-  border: 1px solid gray;
-  color: gray;
-  border-radius: 10%;
-  padding: 5px;
-}
-
 /***************
   MEDIA QUERY
 ***************/
-@media (min-width: 768px) {
-  body {
-    --w-aside: 75px;
-  }
-
+@media (min-width: 576px) {
   table th:nth-child(3),
   table td:nth-child(3) {
     display: table-cell;
   }
 }
 
+@media (min-width: 768px) {
+  body {
+    --w-aside: 75px;
+  }
+  
+  table th:nth-child(2),
+  table td:nth-child(2) {
+    display: table-cell;
+  }
+
+  .as_w-md-50 {
+    width: 50% !important;
+  }
+}
+ 
+
 @media (min-width: 1200px) {
   body {
     --w-aside: 150px;
   }
 
-  table th:nth-child(2),
-  table td:nth-child(2) {
-    display: table-cell;
+  .as_logo-xl {
+    width: 170px;
   }
 }

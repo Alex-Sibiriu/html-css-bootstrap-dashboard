@@ -23,63 +23,59 @@
 <body>
 
   <header>
-    
-    <!-- FIXME:Grandezze sezioni header -->
 
-    <!-- LOGO -->
-    <div class="container-fluid h-100">
-      <div class="row h-100 align-items-center">
+    <div class="container-fluid h-100 d-flex"> 
 
-        <div class="col-2 h-100 d-flex align-items-center">
-          <img class="d-xl-none" src="assets/img/mobile-logo.png" alt="logo">
-          <img class="d-none d-xl-block w-75" src="assets/img/logo.svg" alt="logo">
-        </div>
-        <!-- /LOGO -->
-
-        <!-- SEARCH BAR -->
-        <div class="col-9 d-flex">
-          <div class="as_glass-icon rounded-start-3 h-100 p-2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <input class="border-0 w-100 p-2 rounded-end-3" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
-        </div>
-        <!-- /SEARCH BAR -->
-
-        <!-- ICONS -->
-        <div class="col-1 d-flex justify-content-center h-100 align-items-center">
-          <div class="dropdown d-flex">
-
-            <ul class="d-none d-xl-flex list-unstyled h-100 align-items-center justify-content-between m-0">
-              <li>
-                <a href="#">
-                  <i class="fa-solid fa-list mx-2 text-dark"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-solid fa-circle-question mx-2 text-dark"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-solid fa-ellipsis-vertical mx-2 text-dark"></i>
-                </a>
-              </li>
-            </ul>
-
-            <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-bell text-warning mx-2"></i>
-            </a>
-          
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Anotder action</a></li>
-              <li><a class="dropdown-item" href="#">Sometding else here</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- /ICONS -->
+      <!-- LOGO -->
+      <div class="d-flex align-items-center as_logo-xl">
+        <img class="d-xl-none" src="assets/img/mobile-logo.png" alt="logo">
+        <img class="d-none d-xl-block w-100" src="assets/img/logo.svg" alt="logo">
       </div>
+      <!-- /LOGO -->
+
+      <!-- SEARCH BAR -->
+      <div class="d-flex w-100 p-3">
+        <div class="as_glass-icon rounded-start-3 h-100 p-2">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input class="border-0 w-100 p-2 rounded-end-3" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+      </div>
+      <!-- /SEARCH BAR -->
+
+      <!-- ICONS -->
+      <div class="d-flex justify-content-center h-100 align-items-center">
+        <div class="dropdown d-flex">
+
+          <ul class="d-none d-xl-flex list-unstyled h-100 align-items-center justify-content-between m-0">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-list mx-2 text-dark"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-circle-question mx-2 text-dark"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-ellipsis-vertical mx-2 text-dark"></i>
+              </a>
+            </li>
+          </ul>
+
+          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bell text-warning mx-2"></i>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Anotder action</a></li>
+            <li><a class="dropdown-item" href="#">Sometding else here</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /ICONS -->
     </div>
 
   </header>
@@ -133,8 +129,107 @@
       <!-- INFO BAR -->
       <div class="as_students-infos py-4 container-fluid text-bg-primary mb-3">
         <div class="row row-cols-1 row-cols-md-3 align-items-center">
-          <div class="col order-md-1 col-xl-2">
-            <p class="fw-bold">Nuovo Studente +</p>
+          <div class="col order-md-1 col-xl-2 align-self-start pt-3">
+            <p class="fw-bold d-inline-block me-2">Nuovo Studente</p>
+
+            <!-- OFFCANVAS -->
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end w-100 as_w-md-50" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+
+                <!-- FORM -->
+                <form class="row g-3 fw-medium">
+
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="firstName">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="lastName">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputEmail2" class="form-label">Conferma Email</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="email" class="form-control" id="inputEmail2" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="inputPassword2" class="form-label">Conferma Password</label>
+                    <input type="password" class="form-control" id="inputPassword2">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Città</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">Stato</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Scegli uno Stato</option>
+                      <option>Italia</option>
+                      <option>Germania</option>
+                      <option>Francia</option>
+                      <option>Austria</option>
+                      <option>USA</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">CAP</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+
+                  <div class="col-12 mb-3">
+                    <label for="formFile" class="form-label">Foto</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Salva</button>
+                    <button type="reset" class="btn btn-warning">Svuota</button>
+                  </div>
+                </form>
+                <!-- /FORM -->
+              </div>
+            </div>
+            <!-- /OFFCANVAS -->
+
           </div>
           <div class="col col-xl-6">
             <h1 class="d-inline-block me-2">Boolean</h1>
@@ -163,6 +258,7 @@
           <!-- FIRST COL -->
           <div class="col col-xl-8">
             <div class="row row-cols-1 ">
+
               <div class="col">
 
                 <!-- NEXT CLASS TABLE-->
@@ -170,7 +266,7 @@
                   <h2 class="as_bg-gray m-0 p-2 border-bottom border-secondary">Prossime Classi</h2>
 
                   <div class="container-fluid bg-white px-3 pt-4 pb-5">
-                    <table class="table m-0">             
+                    <table class="table table-hover m-0">             
                         <thead>
                           <tr>
                             <th scope="col">Nome</th>
@@ -193,8 +289,12 @@
                             <span class="badge text-bg-success">Done</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
 
@@ -209,8 +309,12 @@
                             <span class="badge text-bg-success">Done</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
 
@@ -225,8 +329,12 @@
                             <span class="badge bg-warning">Process</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
 
@@ -241,8 +349,12 @@
                             <span class="badge text-bg-success">Done</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
 
@@ -257,8 +369,12 @@
                             <span class="badge text-bg-danger">Failed</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
 
@@ -273,8 +389,12 @@
                             <span class="badge text-bg-success">Done</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
 
@@ -289,8 +409,12 @@
                             <span class="badge text-bg-danger">Failed</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
 
@@ -305,8 +429,12 @@
                             <span class="badge text-bg-success">Done</span>
                           </td>
                           <td>
-                            <i class="action fa-solid fa-pencil"></i>
-                            <i class="action fa-solid fa-trash-can"></i>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
                           </td>
                         </tr>
                       
@@ -402,6 +530,7 @@
 
               </div>
               <div class="col">
+
                 <!-- STATS-->
                 <div class="container-fluid overflow-hidden rounded-3 border border-secondary bg-white p-3">
                   <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0">
@@ -424,9 +553,7 @@
           <!-- /SECOND COL -->
 
         </div>
-
       </div>
-
     </div>
   </main>
   
