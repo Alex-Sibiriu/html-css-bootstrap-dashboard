@@ -1,7 +1,6 @@
 :root {
   --h-header: 70px;
   --w-aside: 70px;
-
   --clr-light-gray: #E5E5E5;
 }
 
@@ -33,6 +32,7 @@ i {
 ***********/
 header {
   height: var(--h-header);
+  background-color: #F8F9FA;
 }
 
 header img {
@@ -69,11 +69,18 @@ aside .as_aside-icons:hover {
   cursor: pointer;
 }
 
-
 /* INFO BAR */
 .as_students-infos .badge {
   background-color: #165BBA;
   font-size: 1rem;
+}
+
+.as_students-infos .btn-primary {
+  background-color: #165BBA;
+}
+
+.as_students-infos .btn-primary:hover {
+  filter: brightness(.9);
 }
 
 /* TABLE */
@@ -124,13 +131,8 @@ table td:nth-child(3) {
   table td:nth-child(2) {
     display: table-cell;
   }
-
-  .as_w-md-50 {
-    width: 50% !important;
-  }
 }
  
-
 @media (min-width: 1200px) {
   body {
     --w-aside: 150px;
@@ -138,5 +140,9 @@ table td:nth-child(3) {
 
   .as_logo-xl {
     width: 170px;
+  }
+
+  .as_w-xl-50 {
+    width: 50% !important;
   }
 }

@@ -24,17 +24,17 @@
 
   <header>
 
-    <div class="container-fluid h-100 d-flex"> 
+    <div class="container-fluid h-100 d-flex ps-0"> 
 
       <!-- LOGO -->
-      <div class="d-flex align-items-center as_logo-xl">
+      <div class="d-flex align-items-center as_logo-xl bg-white px-3 my-3">
         <img class="d-xl-none" src="assets/img/mobile-logo.png" alt="logo">
         <img class="d-none d-xl-block w-100" src="assets/img/logo.svg" alt="logo">
       </div>
       <!-- /LOGO -->
 
       <!-- SEARCH BAR -->
-      <div class="d-flex w-100 p-3">
+      <div class="d-flex w-100 py-3">
         <div class="as_glass-icon rounded-start-3 h-100 p-2">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -137,7 +137,7 @@
                 <i class="fa-solid fa-plus"></i>
             </button>
 
-            <div class="offcanvas offcanvas-end w-100 as_w-md-50" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas offcanvas-end w-100 as_w-xl-50" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -233,14 +233,14 @@
           </div>
           <div class="col col-xl-6">
             <h1 class="d-inline-block me-2">Boolean</h1>
-            <span class="badge rounded-pill">Piano blaze</span>
+            <button type="button" class="btn btn-primary rounded-pill py-0 px-2 fw-medium">Piano blaze</button>
             <div>
-              <span class="badge rounded-pill">3 app</span>
+              <button type="button" class="btn btn-primary rounded-pill py-0 px-2 fw-medium">3 app</button>
               <i class="fa-solid fa-angles-right"></i>
-              <span class="badge rounded-pill d-xl-none">+</span>
-              <span class="badge rounded-pill d-none d-xl-inline-block">Boolean mobile app</span>
-              <span class="badge rounded-pill d-none d-xl-inline-block">Boolean web app</span>
-              <span class="badge rounded-pill d-none d-xl-inline-block">Boolean blog app</span>
+              <button type="button" class="btn btn-primary rounded-pill py-0 px-2 fw-medium d-xl-none">+</button>
+              <button type="button" class="btn btn-primary rounded-pill py-0 px-2 fw-medium d-none d-xl-inline-block">Boolean mobile app</button>
+              <button type="button" class="btn btn-primary rounded-pill py-0 px-2 fw-medium d-none d-xl-inline-block">Boolean web app</button>
+              <button type="button" class="btn btn-primary rounded-pill py-0 px-2 fw-medium d-none d-xl-inline-block">Boolean blog app</button>
             </div>
           </div>
           <div class="col col-xl-4 mt-4 mt-md-0">
@@ -262,10 +262,10 @@
               <div class="col">
 
                 <!-- NEXT CLASS TABLE-->
-                <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0 mb-4">
-                  <h2 class="as_bg-gray m-0 p-2 border-bottom border-secondary">Prossime Classi</h2>
+                <div class="card overflow-hidden border border-secondary p-0 mb-4">
+                  <h2 class="as_bg-gray m-0 p-2">Prossime Classi</h2>
 
-                  <div class="container-fluid bg-white px-3 pt-4 pb-5">
+                  <div class="card bg-white px-3 pt-4 pb-5 border-0 rounded-top-0 border-top border-secondary">
                     <table class="table table-hover m-0">             
                         <thead>
                           <tr>
@@ -448,10 +448,10 @@
               <div class="col">
 
                 <!-- FAQ -->
-                <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0 mb-4">
+                <div class="card overflow-hidden border border-secondary p-0 mb-4">
                   <h2 class="p-2 as_bg-gray m-0">F.A.Q.</h2>
 
-                  <div class="container-fluid bg-white py-4 border-top border-secondary">
+                  <div class="card bg-white p-3 border-0 rounded-top-0 border-top border-secondary">
                     <div class="accordion" id="accordionExample">
                       <div class="accordion-item border-start-0 border-end-0 border-top-0">
                           <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -504,10 +504,10 @@
               <div class="col">
 
                 <!-- TO DO -->
-                <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0 mb-4">
+                <div class="card overflow-hidden border border-secondary p-0 mb-4">
                   <h2 class="p-2 as_bg-gray m-0">To Do</h2>
 
-                  <div class="container-fluid bg-white py-4 border-top border-secondary">
+                  <div class="card bg-white p-3 border-0 rounded-top-0 border-top border-secondary">
                     
                     <ul class="list-group">
                       <li class="list-group-item">
@@ -532,8 +532,8 @@
               <div class="col">
 
                 <!-- STATS-->
-                <div class="container-fluid overflow-hidden rounded-3 border border-secondary bg-white p-3">
-                  <div class="container-fluid overflow-hidden rounded-3 border border-secondary p-0">
+                <div class="card overflow-hidden border border-secondary bg-white p-3">
+                  <div class="card overflow-hidden border border-secondary p-0">
                     <img class="img-fluid" src="assets/img/stats.jpeg" alt="stats">
                     <h6 class="fs-2 fw-normal px-3">Utenti attivi</h6>
                     <p class="border-bottom border-secondary pb-3 px-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
